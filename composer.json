@@ -1,0 +1,17 @@
+{
+    "name": "izongchao\/laravel-datatables-order",
+    "description": "Datatables order by laravel.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "xuzongchao",
+            "email": "zchao0723@126.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Izongchao\\LaravelDatatablesOrder\\": "src"
+        }
+    }
+}
