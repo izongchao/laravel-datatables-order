@@ -24,7 +24,6 @@ trait DatatablesOrder
     {
         $key = array_get($request->all(), 'order.0.column', false);
         $dir = array_get($request->all(), 'order.0.dir', false);
-        
 
         if ($key && $dir) {
             $columnKey = 'columns.' . $key . '.data';
