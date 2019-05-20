@@ -1,5 +1,14 @@
 <?php
 
+/*
+ * This file is part of the izongchao/gweather.
+ *
+ * (c) xuzongchao <zchao0723@126.com>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
+
 namespace Izongchao\LaravelDatatablesOrder;
 
 use Illuminate\Http\Request;
@@ -28,7 +37,7 @@ trait DatatablesOrder
             $column = array_get($request->all(), $columnKey, false);
 
             if ($column && Schema::hasColumn($this->getTable(), $column)) {
-                if ($dir === 'desc') {
+                if ('desc' === $dir) {
                     return $query->latest($column);
                 }
 
