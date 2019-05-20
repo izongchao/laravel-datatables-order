@@ -6,14 +6,12 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Schema;
 
 /**
- * Trait DatatablesOrder
- *
- * @package App\Traits
+ * Trait DatatablesOrder.
  */
 trait DatatablesOrder
 {
     /**
-     * 高级排序
+     * 高级排序.
      *
      * @param $query
      * @param $request
@@ -26,13 +24,14 @@ trait DatatablesOrder
         $dir = array_get($request->all(), 'order.0.dir', false);
 
         if ($key && $dir) {
-            $columnKey = 'columns.' . $key . '.data';
+            $columnKey = 'columns.'.$key.'.data';
             $column = array_get($request->all(), $columnKey, false);
 
             if ($column && Schema::hasColumn($this->getTable(), $column)) {
                 if ($dir === 'desc') {
                     return $query->latest($column);
                 }
+
                 return $query->oldest($column);
             }
         }
