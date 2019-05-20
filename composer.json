@@ -8,7 +8,10 @@
             "email": "zchao0723@126.com"
         }
     ],
-    "require": {},
+    "require": {
+        "illuminate/support": "5.5.x",
+        "illuminate/http": "5.5.x"
+    },
     "autoload": {
         "psr-4": {
             "Izongchao\\LaravelDatatablesOrder\\": "src"

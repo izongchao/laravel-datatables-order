@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Schema;
 
 /**
  * Trait DatatablesOrder
- * 
+ *
  * @package Izongchao\LaravelDatatablesOrder
  */
 trait DatatablesOrder
