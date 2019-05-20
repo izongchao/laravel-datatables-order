@@ -16,7 +16,7 @@ trait DatatablesOrder
      * 高级排序
      *
      * @param $query
-     * @param $request
+     * @param Request $request
      *
      * @return mixed
      */
