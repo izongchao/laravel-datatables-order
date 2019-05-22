@@ -2,7 +2,6 @@
 
 <p align="center"> Datatables order by laravel..</p>
 
-
 ## Installing
 
 ```shell
