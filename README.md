@@ -1,14 +1,14 @@
 <h1 align="center"> laravel-datatables-order </h1>
 
-<p align="center"> Datatables order by laravel..</p>
+<p align="center"> Laravel ORM 中 jquery datatables 排序</p>
 
-## Installing
+## 安装
 
 ```shell
 $ composer require izongchao/laravel-datatables-order -vvv
 ```
 
-## Usage
+## 使用
 
 先在模型中use DatatablesOrder
 ```php
@@ -28,7 +28,7 @@ User::datatablesOrder($request)->get();
  
 
 
-## Contributing
+## 贡献
 
 You can contribute in one of three ways:
 
